@@ -1,6 +1,6 @@
 # ArgoCD Basics
 
-## 2.1 Why ArgoCD for GitOps?
+## 1.1 Why ArgoCD for GitOps?
 
 * **Purpose-built for Kubernetes**: ArgoCD is a Kubernetes controller, native to the ecosystem.
 * **Declarative + GitOps**: Uses Git repos as the source of truth.
@@ -13,7 +13,7 @@ ArgoCD makes GitOps adoption beginner-friendly and production-grade.
 
 ---
 
-## 2.2 ArgoCD vs FluxCD vs Jenkins X
+## 1.2 ArgoCD vs FluxCD vs Jenkins X
 
 | Tool          | Strengths                                                             | Weaknesses                                                         |
 | ------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -23,7 +23,7 @@ ArgoCD makes GitOps adoption beginner-friendly and production-grade.
 
 ---
 
-## 2.3 ArgoCD Architecture
+## 1.3 ArgoCD Architecture
 
 ![ArgoCD Architecture](https://argo-cd.readthedocs.io/en/stable/assets/argocd_architecture.png)
 
@@ -53,7 +53,7 @@ ArgoCD makes GitOps adoption beginner-friendly and production-grade.
 
 ---
 
-## 2.4 Key ArgoCD Concepts
+## 1.4 Key ArgoCD Concepts
 
 ### 1. **Application**
 
@@ -117,7 +117,7 @@ ArgoCD makes GitOps adoption beginner-friendly and production-grade.
 
 ---
 
-## 2.5 Summary
+## 1.5 Summary
 
 * GitOps makes Git the source of truth.
 * ArgoCD implements GitOps with continuous reconciliation.
