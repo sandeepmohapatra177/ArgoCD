@@ -1,6 +1,4 @@
-# ArgoCD
-
-# Chapter 1: ArgoCD Basics
+# ArgoCD Basics
 
 ## 2.1 Why ArgoCD for GitOps?
 
