@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: online-shop-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/sandeepmohapatra177/argocd-demos.git    # Replace it with your forked repo
+    targetRevision: main
+    path: declarative_approach/online_shop
+  destination:
+    server: https://172.17.0.1:33893   # Replace with your Cluster Url, To get run: `argocd cluster list`
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
