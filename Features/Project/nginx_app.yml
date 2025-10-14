@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-frontend
+  namespace: argocd
+
+spec:
+  project: frontend-team
+  source:
+    repoURL: https://github.com/sandeepmohapatra177/ArgoCD.git
+    targetRevision: main
+    path: Features/Project
+  destination:
+    server: https://172.17.0.1:33893
+    namespace: frontend
+  syncPolicy:                    # Sync policy settings
+    automated:                   # Enable automated sync
+      prune: true                 # Delete resources removed from Git
+      selfHeal: true              # Correct drift if resources change in cluster
+    syncOptions:                 # Additional sync options
+      - CreateNamespace=true
+~                                                                 ~                               
