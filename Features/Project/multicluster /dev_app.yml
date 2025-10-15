@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/<your-username>/argocd-demos.git
+    repoURL: https://github.com/sandeepmohapatra177/ArgoCD.git
     targetRevision: main
     path: ui_approach/nginx        # Path to nginx manifests
   destination:
