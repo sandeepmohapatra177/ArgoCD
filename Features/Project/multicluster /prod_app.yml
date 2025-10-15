@@ -6,11 +6,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/<your-username>/argocd-demos.git
+    repoURL: https://github.com/sandeepmohapatra177/ArgoCD.git
     targetRevision: main
     path: multicluster/online-shop # Path within the repo
   destination:
-    server: <prod-cluster-server-url> # Production cluster API server URL here, run `argocd cluster list` to get the URL
+    server: https://172.17.0.1:33893 # Production cluster API server URL here, run `argocd cluster list` to get the URL
     namespace: default
   syncPolicy:
     automated:
