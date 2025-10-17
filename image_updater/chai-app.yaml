@@ -28,3 +28,4 @@ spec:
       selfHeal: true            # Automatically corrects drift between live and desired state
 
 # Brief: This ArgoCD Application manifest configures automated deployment and image updates for the 'chai-app' using ArgoCD Image Updater, with changes written back to Git.
+ok
