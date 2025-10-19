@@ -16,6 +16,6 @@ data:
     g, alice, role:developer 
     # Assign 'admin' role to user 'bob'
     g, bob, role:admin 
-    g, sandeep, role: developer
+    g, sandeep, role:developer
   # Default role for users not explicitly assigned
   policy.default: role:readonly
